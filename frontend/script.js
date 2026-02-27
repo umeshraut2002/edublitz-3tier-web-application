@@ -3,7 +3,7 @@
  * POST /enquiry — submit | GET /enquiries — list
  */
 
-const BACKEND_URL = 'https://d391e0z4hipqex.cloudfront.net';
+const BACKEND_URL = '';
 
 const form = document.getElementById('enquiry-form');
 const messageBox = document.getElementById('message-box');
@@ -117,7 +117,7 @@ form.addEventListener('submit', async function (e) {
     hideMessage();
 
     if (BACKEND_URL.includes('YOUR_EC2_PUBLIC_IP')) {
-        showMessage('Set BACKEND_URL in script.js to your EC2 public IP (e.g. http://54.123.45.67:8080)', true);
+        showMessage('Set BACKEND_URL in script.js to your EC2 public IP (e.g. http://13.212.251.184:8080)', true);
         return;
     }
 
